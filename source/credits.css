@@ -1,0 +1,158 @@
+
+/* Desktop Design */
+
+html {
+    background-color: black;
+}
+
+.box {
+  position: relative;
+  background-color: #414141;
+  width: 190vh;
+  height: 99vh;
+  overflow: hidden;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  color: white;
+  position: relative;
+}
+
+body, html {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+#credits {
+  position: relative;
+  top: 30vh;
+  font-size: 30px;
+  background-color: #6c0000;
+  border: 1vh double #6c0000;
+  border-radius: 2vh;
+  box-shadow: #500000 0.7vh 0vh 0.5vh;
+  margin-top: 2vh;
+  transition: 0.3s ease;
+}
+
+#credits:hover {
+  cursor: pointer;
+  border-color: #000000;
+  background-color: #000000;
+  transform: translateX(-2vh);
+  box-shadow: 1vh 1vh 1vh black;
+}
+
+ul {
+  position: relative;
+  top: 30vh;
+  border: 1vh double #6c0000;
+  background-color: #6c0000;
+  box-shadow: #500000 0.7vh 0vh 0.5vh;
+  border-radius: 2vh;
+  width: 15vh;
+  height: 3vh;
+  list-style: none;
+  margin: 5vh;
+  margin-right: 50vh;
+  margin-left: 50vh;
+  font-size: 3vh;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+ul:hover {
+  cursor: pointer;
+  border-color: #000000;
+  background-color: #000000;
+  transform: translateX(-2vh);
+  box-shadow: 1vh 1vh 1vh black;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: 15px;
+}
+
+/* Mobile Design */
+
+@media screen and (max-width: 600px) {
+
+html {
+    background-color: black;
+}
+
+body {
+  color: white;
+  position: relative;
+}
+
+#credits {
+  position: relative;
+  top: 30vh;
+  margin-right: 150vh;
+  right: 100vh;
+  font-size: 13px;
+  background-color: #6c0000;
+  border: 1vh double #6c0000;
+  border-radius: 2vh;
+  box-shadow: #500000 0.7vh 0vh 0.5vh;
+  margin-top: 2vh;
+  transition: 0.3s ease;
+}
+
+#credits:hover {
+  cursor: pointer;
+  border-color: #000000;
+  background-color: #000000;
+  transform: translateX(-2vh);
+  box-shadow: 1vh 1vh 1vh black;
+}
+
+ul {
+  position: relative;
+  top: 30vh;
+  right: 73vh;
+  border: 1vh double #6c0000;
+  background-color: #6c0000;
+  box-shadow: #500000 0.7vh 0vh 0.5vh;
+  border-radius: 2vh;
+  width: 15vh;
+  height: 3vh;
+  list-style: none;
+  margin: 5vh;
+  margin-right: 50vh;
+  margin-left: 50vh;
+  font-size: 3vh;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+ul:hover {
+  cursor: pointer;
+  border-color: #000000;
+  background-color: #000000;
+  transform: translateX(-2vh);
+  box-shadow: 1vh 1vh 1vh black;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: 15px;
+}
+}
