@@ -107,6 +107,12 @@ a {
   border: 1vh double black;
 }
 
+.kofi {
+  position: relative;
+  top: -15vh;
+  right: 67vh;
+}
+
 /* Mobile Design */
 
 @media screen and (max-width: 900px) {
