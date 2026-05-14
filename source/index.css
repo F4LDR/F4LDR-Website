@@ -3,13 +3,15 @@
 
 html {
   background-color: black;
+  font-size: 20px;
 }
 
 .box {
   position: relative;
   background-color: #414141;
-  width: 190vh;
-  max-height: 99vh;
+  width: 100%;
+  max-width: 100vw;
+  max-height: 100vh;
   overflow: hidden;
 }
 
@@ -19,31 +21,40 @@ main {
   align-items: flex-start;
 }
 
+nav {
+  position: relative;
+}
+
 body, html {
   overflow-y: hidden;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 article {
   position: relative;
-  left: 33vh;
+  left: 28rem;
+  top: 5rem;
   color: white;
   user-select: none;
   background-color: #6c0000;
-  border: 1vh double #6c0000;
-  border-radius: 2vh;
+  border: 0.15rem groove #6c0000;
+  border-radius: 1rem;
   box-shadow: #500000 0.7vh 0vh 0.5vh;
-  margin-top: 2vh;
+  margin-top: 1rem;
+  padding: 10px;
 }
 
 h1 {
   color: rgb(255, 255, 255);
   position: relative;
-  top: 1vh;
-  padding-left: 47vh;
+  top: 5rem;
+  left: 12rem;
+  padding-left: 22rem;
   user-select: none;
-  text-shadow: #000000 0vh -0.4vh 0.5vh;
-  font-size: 5vh;
+  text-shadow: #000000 0rem -0.2rem 0.3rem;
+  font-size: 3rem;
 }
 
 ul {
@@ -56,19 +67,19 @@ ul {
 
 li {
   position: relative;
-  top: -60vh;
-  right: -15vh;
-  border: 1vh double #6c0000;
+  top: -23rem;
+  right: -20rem;
+  border: 0.15rem double #6c0000;
   background-color: #6c0000;
-  box-shadow: #500000 0.7vh 0vh 0.5vh;
-  border-radius: 2vh;
+  box-shadow: #500000 0.4rem 0rem 0.3rem;
+  border-radius: 1rem;
   width: 20%;
-  height: 3vh;
+  height: 2rem;
   list-style: none;
-  margin: 5vh;
-  margin-right: 50vh;
-  margin-left: 50vh;
-  font-size: 3vh;
+  margin: 2.5rem;
+  margin-right: 24rem;
+  margin-left: 24rem;
+  font-size: 1.5rem;
   text-align: center;
   transition: 0.3s ease;
 }
@@ -78,7 +89,7 @@ li:hover {
   border-color: #000000;
   background-color: #000000;
   transform: translateX(-2vh);
-  box-shadow: 1vh 1vh 1vh black;
+  box-shadow: 0.5rem 0.5rem 0.5rem black;
 }
 
 a {
@@ -87,11 +98,11 @@ a {
 }
 
 #overlay {
-  position: absolute;
-  right: 25vh;
-  top: 5vh;
-  width: 40vh;
-  height: 100vh;
+  position: relative;
+  right: 15rem;
+  top: -20rem;
+  width: 27rem;
+  height: 100%;
   max-height: 100vh;
   opacity: 50%;
   filter: brightness(30%);
@@ -100,17 +111,30 @@ a {
 
 #icon {
   position: relative;
-  left: 30vh;
-  width: 50vh;
-  height: 50vh;
+  left: 26rem;
+  top: 5rem;
+  width: 24rem;
+  height: 24rem;
   border-radius: 50px;
-  border: 1vh double black;
+  border: 0.5rem double black;
+  user-select: none;
 }
 
 .kofi {
-  position: relative;
-  top: -15vh;
-  right: 67vh;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.kofi img {
+  display: block;
+  width: 150px;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Mobile Design */
@@ -121,86 +145,92 @@ html {
   background-color: black;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .box {
   position: relative;
   background-color: #414141;
-  width: 190vh;
-  height: 99vh;
+  width: 100%;
+  height: 100vh;
   overflow: hidden;
 }
 
 article {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  left: 1vh;
+  position: static;
   color: white;
   user-select: none;
-  max-width: 40vh;
-  border: 1vh double #6c0000;
-  border-radius: 2vh;
-  box-shadow: #500000 0.7vh 0vh 0.5vh;
-  font-size: 1.4vh;
+  width: 85%;
+  max-width: 85%;
+  border: 0.15rem groove #6c0000;
+  border-radius: 1rem;
+  box-shadow: #500000 0.4rem 0rem 0.3rem;
+  font-size: 0.85rem;
+  margin: 1rem auto;
+  padding: 10px;
+}
+
+nav {
+  width: 85%;
+  margin: 0 auto;
 }
 
 h1 {
   color: rgb(255, 255, 255);
   position: relative;
-  top: 1vh;
-  padding-left: 13vh;
+  top: 0.5rem;
+  left: -2rem;
+  padding-left: 8rem;
   user-select: none;
-  text-shadow: #000000 0vh -0.4vh 0.5vh;
-  font-size: 5vh;
+  text-shadow: #000000 0rem -0.2rem 0.3rem;
+  font-size: 2.5rem;
 }
 
 ul {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
   padding: 0;
   margin: 0;
-  justify-content: flex-start;
-  gap: 2vh;
 }
 
 li {
-  position: relative;
-  top: 33vh;
-  right: 40.5vh;
-  border: 1vh double #6c0000;
-  background-color: #6c0000;
-  box-shadow: #500000 0.7vh 0vh 0.5vh;
-  border-radius: 2vh;
-  width: 5vh;
-  height: 3vh;
+  position: static;
+  width: 100%;
+  height: 2.5rem;
+  margin: 0;
+  font-size: 1rem;
+  border-radius: 1rem;
   list-style: none;
-  margin: 0.2vh;
-  font-size: 3vh;
   text-align: center;
-  transition: 0.3s ease;
-  flex: 0 1 calc(33.333% - 1vh);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 li:hover {
   cursor: pointer;
   border-color: #000000;
   background-color: #000000;
-  transform: translateX(-2vh);
-  box-shadow: 1vh 1vh 1vh black;
+  transform: translateX(-1rem);
+  box-shadow: 0.5rem 0.5rem 0.5rem black;
 }
 
 a {
   text-decoration: none;
   color: white;
-  font-size: 2vh;
+  font-size: 1rem;
 }
 
 #overlay {
   position: absolute;
-  left: 20vh;
-  top: 30vh;
-  width: 40vh;
-  height: 100vh;
+  left: 5rem;
+  top: 15rem;
+  width: 20rem;
+  height: 100%;
   max-height: 100vh;
   opacity: 20%;
   filter: brightness(30%);
@@ -209,9 +239,27 @@ a {
 
 #icon {
   position: relative;
-  left: 12vh;
-  width: 20vh;
-  height: 20vh;
+  left: 4.5rem;
+  top: 0.5rem;
+  width: 10rem;
+  height: 10rem;
   border-radius: 50px;
+}
+
+.kofi {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.kofi img {
+  display: block;
+  width: 100px;
+  max-width: 100%;
+  height: auto;
 }
 }
