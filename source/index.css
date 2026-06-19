@@ -49,8 +49,8 @@ article {
 h1 {
   color: rgb(255, 255, 255);
   position: relative;
-  top: 5rem;
-  left: 12rem;
+  top: 1rem;
+  left: 13rem;
   padding-left: 22rem;
   user-select: none;
   text-shadow: #000000 0rem -0.2rem 0.3rem;
@@ -99,7 +99,7 @@ a {
 
 #overlay {
   position: relative;
-  right: 15rem;
+  right: 10rem;
   top: -20rem;
   width: 27rem;
   height: 100%;
@@ -111,7 +111,7 @@ a {
 
 #icon {
   position: relative;
-  left: 26rem;
+  left: 23rem;
   top: 5rem;
   width: 24rem;
   height: 24rem;
