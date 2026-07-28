@@ -1,265 +1,41 @@
-
-/* Desktop Design */
-
 html {
-  background-color: black;
-  font-size: 20px;
+  background-color: grey;
 }
 
-.box {
-  position: relative;
-  background-color: #414141;
-  width: 100%;
-  max-width: 100vw;
-  max-height: 100vh;
-  overflow: hidden;
-}
-
-main {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-}
-
-nav {
-  position: relative;
-}
-
-body, html {
-  overflow-y: hidden;
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-}
-
-article {
-  position: relative;
-  left: 28rem;
-  top: 5rem;
-  color: white;
-  user-select: none;
-  background-color: #6c0000;
-  border: 0.15rem groove #6c0000;
-  border-radius: 1rem;
-  box-shadow: #500000 0.7vh 0vh 0.5vh;
-  margin-top: 1rem;
-  padding: 10px;
-}
-
-h1 {
-  color: rgb(255, 255, 255);
-  position: relative;
-  top: 1rem;
-  left: 13rem;
-  padding-left: 22rem;
-  user-select: none;
-  text-shadow: #000000 0rem -0.2rem 0.3rem;
-  font-size: 3rem;
-}
-
-ul {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0;
-  margin: 0;
-  justify-content: space-between;
-}
-
-li {
-  position: relative;
-  top: -23rem;
-  right: -20rem;
-  border: 0.15rem double #6c0000;
-  background-color: #6c0000;
-  box-shadow: #500000 0.4rem 0rem 0.3rem;
-  border-radius: 1rem;
-  width: 20%;
-  height: 2rem;
-  list-style: none;
-  margin: 2.5rem;
-  margin-right: 24rem;
-  margin-left: 24rem;
-  font-size: 1.5rem;
+body {
+  color: black;
+  font-size: 3ch;
   text-align: center;
-  transition: 0.3s ease;
 }
 
-li:hover {
-  cursor: pointer;
-  border-color: #000000;
-  background-color: #000000;
-  transform: translateX(-2vh);
-  box-shadow: 0.5rem 0.5rem 0.5rem black;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-}
-
-#overlay {
-  position: relative;
-  right: 10rem;
-  top: -20rem;
-  width: 27rem;
-  height: 100%;
-  max-height: 100vh;
-  opacity: 50%;
-  filter: brightness(30%);
-  pointer-events: none;
-}
-
-#icon {
-  position: relative;
-  left: 23rem;
-  top: 5rem;
-  width: 24rem;
-  height: 24rem;
-  border-radius: 50px;
-  border: 0.5rem double black;
-  user-select: none;
+h2 {
+  color: darkred;
 }
 
 .kofi {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 999;
-}
-
-.kofi img {
-  display: block;
-  width: 150px;
-  max-width: 100%;
-  height: auto;
-}
-
-/* Mobile Design */
-
-@media screen and (max-width: 900px) {
-
-html {
-  background-color: black;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.box {
-  position: relative;
-  background-color: #414141;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-
-article {
-  position: static;
-  color: white;
-  user-select: none;
-  width: 85%;
-  max-width: 85%;
-  border: 0.15rem groove #6c0000;
-  border-radius: 1rem;
-  box-shadow: #500000 0.4rem 0rem 0.3rem;
-  font-size: 0.85rem;
-  margin: 1rem auto;
-  padding: 10px;
-}
-
-nav {
-  width: 85%;
-  margin: 0 auto;
-}
-
-h1 {
-  color: rgb(255, 255, 255);
-  position: relative;
-  top: 0.5rem;
-  left: -2rem;
-  padding-left: 8rem;
-  user-select: none;
-  text-shadow: #000000 0rem -0.2rem 0.3rem;
-  font-size: 2.5rem;
+  scale: 0.6;
 }
 
 ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.8rem;
-  padding: 0;
-  margin: 0;
-}
-
-li {
-  position: static;
-  width: 100%;
-  height: 2.5rem;
-  margin: 0;
-  font-size: 1rem;
-  border-radius: 1rem;
-  list-style: none;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-li:hover {
-  cursor: pointer;
-  border-color: #000000;
-  background-color: #000000;
-  transform: translateX(-1rem);
-  box-shadow: 0.5rem 0.5rem 0.5rem black;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-  font-size: 1rem;
-}
-
-#overlay {
-  position: absolute;
-  left: 5rem;
-  top: 15rem;
-  width: 20rem;
-  height: 100%;
-  max-height: 100vh;
-  opacity: 20%;
-  filter: brightness(30%);
-  pointer-events: none;
-}
-
-#icon {
   position: relative;
-  left: 4.5rem;
-  top: 0.5rem;
-  width: 10rem;
-  height: 10rem;
-  border-radius: 50px;
+  right: 1ch;
+  list-style: none;
 }
 
-.kofi {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 999;
-}
+@media screen and (max-width: 480px) {
+  body {
+    color: black;
+    font-size: 3ch;
+    text-align: center;
+  }
+  
+  h2 {
+    color: darkred;
+  }
 
-.kofi img {
-  display: block;
-  width: 100px;
-  max-width: 100%;
-  height: auto;
-}
+  .kofi {
+    position: relative;
+    right: 3ch;
+    scale: 0.5;
+  }
 }
